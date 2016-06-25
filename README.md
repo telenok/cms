@@ -19,7 +19,7 @@ Telenok CMS is open-sourced software licensed under the Free for personal, non-c
 
 Using composer.phar execute commands:
 
-    $ php composer.phar create-project --prefer-dist telenok/telenok <target-directory> dev-master
+    $ php composer.phar create-project --prefer-dist telenok/cms <target-directory> dev-master
     $ cd <target-directory>
     $ php artisan telenok:install
     $ php artisan telenok:seed
