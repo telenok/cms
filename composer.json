@@ -23,10 +23,10 @@
     "autoload-dev": {},
     "scripts": {
         "post-install-cmd": [
-            "Telenok\\Core\\Support\\Install\\Custom::postInstall",
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "Telenok\\Core\\Support\\Install\\ComposerScript::postInstall",
             "php composer.phar dump-autoload",
             "php artisan clear-compiled",
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize",
             "php artisan session:table",
             "php artisan telenok:package refresh",
@@ -35,9 +35,9 @@
             "php artisan migrate"
         ],
         "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "Telenok\\Core\\Support\\Install\\Custom::postUpdate",
             "php artisan clear-compiled",
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize",
             "php artisan telenok:package refresh"
         ],
