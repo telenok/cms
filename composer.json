@@ -1,0 +1,33 @@
+{
+    "name": "telenok/cms",
+    "description": "Telenok CMS",
+    "keywords": ["framework", "laravel", "telenok"],
+    "homepage": "http://telenok.com",
+    "license": "commercial",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "telenok/telenok": "@dev"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.0",
+        "phpspec/phpspec": "~2.1",
+        "symfony/css-selector": "2.8.*|3.0.*",
+        "symfony/dom-crawler": "2.8.*|3.0.*",
+        "filp/whoops": "1.*"
+    },
+    "autoload": {},
+    "autoload-dev": {},
+    "scripts": {},
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
