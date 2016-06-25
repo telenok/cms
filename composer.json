@@ -46,7 +46,6 @@
             "php artisan telenok:package refresh"
         ],
         "post-create-project-cmd": [
-            "php -r \"copy('.env.example', '.env');\"",
             "php artisan key:generate"
         ]
     },
