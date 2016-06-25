@@ -20,7 +20,11 @@
         "filp/whoops": "1.*"
     },
     "autoload": {},
-    "autoload-dev": {},
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
     "scripts": {
         "post-install-cmd": [
             "php composer.phar dump-autoload",
