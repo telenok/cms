@@ -27,8 +27,8 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php composer.phar dump-autoload",
             "Telenok\\Core\\Support\\Install\\Custom::postInstall",
+            "php composer.phar dump-autoload",
             "php artisan clear-compiled",
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize",
