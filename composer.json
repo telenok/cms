@@ -21,7 +21,33 @@
     },
     "autoload": {},
     "autoload-dev": {},
-    "scripts": {},
+    "scripts": {
+        "post-install-cmd": [
+            "php composer.phar dump-autoload",
+            "Telenok\\Core\\Support\\Install\\Custom::postInstall",
+            "php artisan clear-compiled",
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan optimize",
+            "php artisan session:table",
+            "php artisan telenok:package refresh",
+            "php artisan queue:table",
+            "php artisan queue:failed-table",
+            "php artisan migrate"
+        ],
+        "post-update-cmd": [
+            "Telenok\\Core\\Support\\Install\\Custom::postUpdate",
+            "php artisan clear-compiled",
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan optimize",
+            "php artisan telenok:package refresh"
+        ],
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ]
+    },
     "config": {
         "preferred-install": "dist"
     },
