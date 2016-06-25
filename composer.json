@@ -20,11 +20,7 @@
         "filp/whoops": "1.*"
     },
     "autoload": {},
-    "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
-        ]
-    },
+    "autoload-dev": {},
     "scripts": {
         "post-install-cmd": [
             "Telenok\\Core\\Support\\Install\\Custom::postInstall",
