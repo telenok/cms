@@ -19,8 +19,6 @@
         "symfony/dom-crawler": "2.8.*|3.0.*",
         "filp/whoops": "1.*"
     },
-    "autoload": {},
-    "autoload-dev": {},
     "scripts": {
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
